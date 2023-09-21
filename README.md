@@ -5,7 +5,7 @@
 2. In the same workspace with the communication folders as above, go to the /src/ folder and clone this repository
 3. In the root of the workspace, build everything as:
 ```
-colcon build
+colcon build --symlink-install
 ```
 5. Create a conda environment with simpy, scipy, and numpy
 
@@ -21,13 +21,9 @@ MicroXRCEAgent udp4 -p 8888
 
 
 ## To Run The NR Controller Computation and Offboard Publisher
-1. The length of time the algorithm runs before the land sequence begins may be changed via the variable in the "_/_init_/_"function at the top:   **self.time_before_land**
-2. 
-The reference path may be changed through the reffunc variable starting in line 139 of the nr_tracker_final.py file. New ones may be defined and referenced here.
-1. If changes have been made to the reference, in one terminal, go to the root of your ROS2 workspace and build this package:
-```
-colcon build --packages-select Final_NR_Wardi_Tracker_Stack
-```
+1. The length of time the algorithm runs before the land sequence begins may be changed via the variable in the "_/_init_/_" function at the top:   **self.time_before_land**
+2. The reference path may be changed through the reffunc variable starting in line 400 of the nr_tracker_final.py file. New ones may be referenced here, and defined below in functions around line 646.
+
 
 ### Through launch file:
 1. In another terminal tab, source the environment from the root of your ROS2 workspace: 
