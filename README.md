@@ -1,9 +1,9 @@
 # MoralesCuadrado_ACC2024
+
 ## Preliminary
-1. Install and run PX4 SITL ([https://docs.px4.io/main/en/simulation/](https://docs.px4.io/main/en/ros/ros2.html)) with Gazebo classic
-2. Create a ROS2 workspace with the px4_msgs package in name_ws/src. It is a needed dependency for ros2-px4 communication
-3. Clone this stack as another package within this ROS2 workspace
-4. In the root of the workspace, build everything as:
+1. Follow the instructions ([here](https://docs.px4.io/main/en/ros/ros2_comm.html)) to set up the PX4 Autopilot Stack, ROS2, Micro XRCE-DDS Agent & Client, and build a ROS2 workspace with the necessary px4 communication repos
+2. In the same workspace with the communication folders as above, go to the /src/ folder and clone this repository
+3. In the root of the workspace, build everything as:
 ```
 colcon build
 ```
@@ -18,7 +18,7 @@ make px4_sitl gazebo-classic
 ```
 MicroXRCEAgent udp4 -p 8888
 ```
-Once this works, you're ready to try using the Newton-Raphson Controller in simulation.
+
 
 ## To Run The NR Controller Computation and Offboard Publisher
 The reference path may be changed through the reffunc variable starting in line 139 of the nr_tracker_final.py file. New ones may be defined and referenced here.
