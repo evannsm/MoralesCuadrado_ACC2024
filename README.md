@@ -21,6 +21,8 @@ MicroXRCEAgent udp4 -p 8888
 
 
 ## To Run The NR Controller Computation and Offboard Publisher
+The length of time the algorithm runs before the land sequence begins may be changed via the variable in the __init__ function at the top:   "self.time_before_land"
+
 The reference path may be changed through the reffunc variable starting in line 139 of the nr_tracker_final.py file. New ones may be defined and referenced here.
 1. If changes have been made to the reference, in one terminal, go to the root of your ROS2 workspace and build this package:
 ```
