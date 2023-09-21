@@ -1,5 +1,8 @@
 # MoralesCuadrado_ACC2024
 
+Videos of the quadrotor flying may be seen at:
+
+
 ## Preliminary
 1. Follow the instructions ([here](https://docs.px4.io/main/en/ros/ros2_comm.html)) to set up the PX4 Autopilot Stack, ROS2, Micro XRCE-DDS Agent & Client, and build a ROS2 workspace with the necessary px4 communication repos
 2. In the same workspace with the communication folders as above, go to the /src/ folder and clone this repository
@@ -32,6 +35,13 @@ MicroXRCEAgent udp4 -p 8888
 source install/setup.bash
 ```
 2. Activate your conda environment in this same terminal with sourcing
+
+## Citing this Work:
+Please site ([this paper]())
+
+## Authors:
+Evanns G. Morales-Cuadrado, Christian Llanes, Yorai Wardi, Samuel Coogan
+
 3. After sourcing and activating environment, run the file:
 ```
 ros2 run newton_raphson_controller newton_raphson
