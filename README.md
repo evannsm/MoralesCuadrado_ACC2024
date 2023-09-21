@@ -9,7 +9,7 @@ colcon build --symlink-install
 ```
 5. Create a conda environment with simpy, scipy, and numpy
 
-## Simulation Run and Communication
+## Simulation Run and Communication (simulation)
 1. Run the SITL simulation
 ```
 make px4_sitl gazebo-classic
@@ -20,12 +20,13 @@ MicroXRCEAgent udp4 -p 8888
 ```
 
 
-## To Run The NR Controller Computation and Offboard Publisher
+## Using The NR Controller Computation and Offboard Publisher
 1. The length of time the algorithm runs before the land sequence begins may be changed via the variable in the "_/_init_/_" function at the top:   **self.time_before_land**
 2. The reference path may be changed through the reffunc variable starting in line 400 of the nr_tracker_final.py file. New ones may be defined below in functions around line 646.
+3. The mass for the quadrotor may be changed for your specific hardware on the **elif not self.sim** statement in the "_/_init_/_" at the top. Don't change for simulation unless you change the simulation model explicitly.
+4. The thrust/throttle mapping may be changed for your specific hardware on the **get_throttle_command_from_force** and **get_force_from_throttle_command** functions. Don't change for simulation unless you change the simulation model explicitly.
 
-
-### Through launch file:
+### Running the controller:
 1. In another terminal tab, source the environment from the root of your ROS2 workspace: 
 ```
 source install/setup.bash
@@ -35,16 +36,4 @@ source install/setup.bash
 ```
 ros2 run newton_raphson_controller newton_raphson
 ```
-
-### This can also be run by running the two separate files on their own:
-1. In one terminal tab, source the environment as shown before, activate the environment and run:
-```
-ros2 run Final_NR_Wardi_Tracker_Stack nr_tracker_final.py
-```
-This is the computation file
-
-2. In another terminal, source again, and run:
-```
-ros2 run Final_NR_Wardi_Tracker_Stack offboard_pub
-```
-This is the offboard publisher that takes the computed input and communicates it to the robot
+4. When prompted, answer [0/1] whether in simulation or hardware.
