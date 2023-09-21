@@ -31,9 +31,9 @@ MicroXRCEAgent udp4 -p 8888
 source install/setup.bash
 ```
 2. Activate your conda environment in this same terminal with sourcing
-3. After sourcing and activating environment, run the launch file:
+3. After sourcing and activating environment, run the file:
 ```
-ros2 launch Final_NR_Wardi_Tracker_Stack nr_tracker_launch.py
+ros2 run newton_raphson_controller newton_raphson
 ```
 
 ### This can also be run by running the two separate files on their own:
