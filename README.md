@@ -22,7 +22,7 @@ MicroXRCEAgent udp4 -p 8888
 
 ## To Run The NR Controller Computation and Offboard Publisher
 1. The length of time the algorithm runs before the land sequence begins may be changed via the variable in the "_/_init_/_" function at the top:   **self.time_before_land**
-2. The reference path may be changed through the reffunc variable starting in line 400 of the nr_tracker_final.py file. New ones may be referenced here, and defined below in functions around line 646.
+2. The reference path may be changed through the reffunc variable starting in line 400 of the nr_tracker_final.py file. New ones may be defined below in functions around line 646.
 
 
 ### Through launch file:
