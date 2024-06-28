@@ -34,10 +34,10 @@ MicroXRCEAgent udp4 -p 8888
 ```
 source install/setup.bash
 ```
-2. Activate your conda environment in this same terminal with sourcing
+2. Activate your conda environment in this same terminal with sourcing (wardiNN is just the name I used for my environment :) )
 
 ```
-conda activate wardiNN
+conda activate wardiNN 
 ```
 
 4. After sourcing and activating environment, run the file:
