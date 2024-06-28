@@ -44,7 +44,7 @@ Evanns G. Morales-Cuadrado, Christian Llanes, Yorai Wardi, Samuel Coogan
 3. Source the environment (this is my environment name):
 ```
 conda activate wardiNN
-``
+```
 
 4. After sourcing and activating environment, run the file:
 ```
