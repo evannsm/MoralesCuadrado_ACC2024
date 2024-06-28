@@ -8,7 +8,7 @@ Videos of the quadrotor flying may be seen ([here](https://youtu.be/cmXgqUy-NV8)
 2. In the same workspace with the communication folders as above, go to the /src/ folder and clone this repository
 3. In the root of the workspace, build everything as:
 ```
-colcon build --symlink-install
+colcon build --packages-select newton_raphson_controller --symlink-install
 ```
 5. Create a conda environment with simpy, scipy, and numpy
 
