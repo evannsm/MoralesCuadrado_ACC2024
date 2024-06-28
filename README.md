@@ -41,9 +41,13 @@ Please site ([this paper (add link when done)]())
 
 ## Authors:
 Evanns G. Morales-Cuadrado, Christian Llanes, Yorai Wardi, Samuel Coogan
+3. Source the environment (this is my environment name):
+```
+conda activate wardiNN
+``
 
-3. After sourcing and activating environment, run the file:
+4. After sourcing and activating environment, run the file:
 ```
 ros2 run newton_raphson_controller newton_raphson
 ```
-4. When prompted, answer [0/1] whether in simulation or hardware.
+5. When prompted, answer [0/1] whether in simulation or hardware.
