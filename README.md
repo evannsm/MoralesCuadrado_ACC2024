@@ -36,12 +36,6 @@ source install/setup.bash
 ```
 2. Activate your conda environment in this same terminal with sourcing
 
-## Citing this Work:
-Please site ([this paper (add link when done)]())
-
-## Authors:
-Evanns G. Morales-Cuadrado, Christian Llanes, Yorai Wardi, Samuel Coogan
-3. Source the environment (this is my environment name):
 ```
 conda activate wardiNN
 ```
@@ -51,3 +45,9 @@ conda activate wardiNN
 ros2 run newton_raphson_controller newton_raphson
 ```
 5. When prompted, answer [0/1] whether in simulation or hardware.
+
+ ## Citing this Work:
+Please site ([this paper (add link when done)]())
+
+## Authors:
+Evanns G. Morales-Cuadrado, Christian Llanes, Yorai Wardi, Samuel Coogan
